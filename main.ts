@@ -55,6 +55,23 @@
 //   bizarre 1 (future-self letters are a known service), logic 1,
 //   pitch 2. Weighted: 5 + 4 + 6 = 15.
 //
+// Pass 2 adds three more challengers; none beats the chosen line either:
+//
+// C7 (113) — "We sell front-row seats to strangers' breakups, with
+//   commentary, popcorn, and a refund if they get back together."
+//   bizarre 2, logic 1 (who pays to watch a breakup, and twice?), pitch 2.
+//   Weighted: 10 + 4 + 6 = 20.
+//
+// C8 (119) — "We rent out grandmothers by the hour to scold your startup's
+//   founders, cook lunch, and tell them to call their mothers."
+//   bizarre 2, logic 1 (hourly rent is named, but the payer and the repeat
+//   are fuzzy), pitch 2. Weighted: 10 + 4 + 6 = 20.
+//
+// C9 (117) — "We run a gym where the treadmills power the lights, so
+//   members who skip leg day literally leave everyone in the dark."
+//   bizarre 1 (human-powered gyms exist), logic 2 (membership + energy),
+//   pitch 2. Weighted: 5 + 8 + 6 = 19.
+//
 // The chosen line wins outright (24 vs best challenger 20): it is the only
 // candidate with a concrete pricing model AND an answered objection, and it
 // is the strangest of the fully sound ones.
@@ -117,6 +134,27 @@ const CANDIDATES: Candidate[] = [
     text: "We mail a letter to your future self every month, so the promises you keep breaking finally have a witness who charges.",
     bizarre: 1,
     logic: 1,
+    pitch: 2,
+  },
+  {
+    name: "C7",
+    text: "We sell front-row seats to strangers' breakups, with commentary, popcorn, and a refund if they get back together.",
+    bizarre: 2,
+    logic: 1,
+    pitch: 2,
+  },
+  {
+    name: "C8",
+    text: "We rent out grandmothers by the hour to scold your startup's founders, cook lunch, and tell them to call their mothers.",
+    bizarre: 2,
+    logic: 1,
+    pitch: 2,
+  },
+  {
+    name: "C9",
+    text: "We run a gym where the treadmills power the lights, so members who skip leg day literally leave everyone in the dark.",
+    bizarre: 1,
+    logic: 2,
     pitch: 2,
   },
 ];
